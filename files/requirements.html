@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Tutoring Jobs - Shegar Tutors</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2><a href="../index.html" style="color: white; text-decoration: none;">Shegar Tutors</a></h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="requirements.html">Find Tutoring Jobs</a></li>
+                <li><a href="post-requirement.html">Post Requirement</a></li>
+                <li><a href="auth/tutor-signup.html">Become a Tutor</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="form-container">
+        <h1>Available Tutoring Jobs</h1>
+        <p>Browse current tutoring requirements and apply for positions that match your expertise</p>
+        
+        <div class="search-filters">
+            <div class="form-group">
+                <label for="filterSubject">Filter by Subject</label>
+                <select id="filterSubject">
+                    <option value="">All Subjects</option>
+                    <option value="math">Mathematics</option>
+                    <option value="physics">Physics</option>
+                    <option value="chemistry">Chemistry</option>
+                    <option value="biology">Biology</option>
+                    <option value="english">English</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="filterLocation">Filter by Location</label>
+                <select id="filterLocation">
+                    <option value="">All Locations</option>
+                    <option value="bole">Bole</option>
+                    <option value="cmc">CMC</option>
+                    <option value="kazanches">Kazanches</option>
+                    <option value="piassa">Piassa</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="filterGrade">Filter by Grade Level</label>
+                <select id="filterGrade">
+                    <option value="">All Grades</option>
+                    <option value="elementary">Elementary School</option>
+                    <option value="middle">Middle School</option>
+                    <option value="high">High School</option>
+                    <option value="university">University</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="requirementsContainer" class="requirements-grid">
+            <!-- Requirements will be loaded here -->
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/requirement.js"></script>
+</body>
+</html>

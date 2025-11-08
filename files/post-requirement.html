@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Tutoring Requirement - Shegar Tutors</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2><a href="../index.html" style="color: white; text-decoration: none;">Shegar Tutors</a></h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="requirements.html">Find Tutoring Jobs</a></li>
+                <li><a href="post-requirement.html">Post Requirement</a></li>
+                <li><a href="auth/tutor-signup.html">Become a Tutor</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="form-container">
+        <h2>Post Tutoring Requirement</h2>
+        <p>Tell us what you need and qualified tutors will apply</p>
+        
+        <form id="requirementForm">
+            <div class="form-group">
+                <label for="studentGrade">Student Grade Level *</label>
+                <select id="studentGrade" required>
+                    <option value="">Select Grade</option>
+                    <option value="elementary">Elementary School (1-6)</option>
+                    <option value="middle">Middle School (7-8)</option>
+                    <option value="high">High School (9-12)</option>
+                    <option value="university">University/College</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="subjects">Subjects Needed *</label>
+                <select id="subjects" multiple required>
+                    <option value="math">Mathematics</option>
+                    <option value="physics">Physics</option>
+                    <option value="chemistry">Chemistry</option>
+                    <option value="biology">Biology</option>
+                    <option value="english">English</option>
+                    <option value="amharic">Amharic</option>
+                    <option value="history">History</option>
+                    <option value="geography">Geography</option>
+                </select>
+                <small>Hold Ctrl/Cmd to select multiple subjects</small>
+            </div>
+
+            <div class="form-group">
+                <label for="location">Location *</label>
+                <select id="location" required>
+                    <option value="">Select Location</option>
+                    <option value="bole">Bole</option>
+                    <option value="cmc">CMC</option>
+                    <option value="kazanches">Kazanches</option>
+                    <option value="piassa">Piassa</option>
+                    <option value="meskel">Meskel Flower</option>
+                    <option value="bethel">Bethel</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="schedule">Preferred Schedule *</label>
+                <input type="text" id="schedule" placeholder="e.g., Weekends 2-4 PM, Monday/Wednesday 5-6 PM" required>
+            </div>
+
+            <div class="form-group">
+                <label for="budget">Budget Range (ETB per hour) *</label>
+                <select id="budget" required>
+                    <option value="">Select Budget</option>
+                    <option value="150-250">150-250 ETB</option>
+                    <option value="250-350">250-350 ETB</option>
+                    <option value="350-450">350-450 ETB</option>
+                    <option value="450-550">450-550 ETB</option>
+                    <option value="550+">550+ ETB</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="requirements">Specific Requirements</label>
+                <textarea id="requirements" rows="4" placeholder="Any specific curriculum (IB, Ethiopian), experience requirements, etc."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="parentName">Your Name *</label>
+                <input type="text" id="parentName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="parentEmail">Email *</label>
+                <input type="email" id="parentEmail" required>
+            </div>
+
+            <div class="form-group">
+                <label for="parentPhone">Phone Number *</label>
+                <input type="tel" id="parentPhone" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Post Requirement</button>
+        </form>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/requirement.js"></script>
+</body>
+</html>
