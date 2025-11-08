@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Shegar Tutors</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2><a href="../../index.html" style="color: white; text-decoration: none;">Shegar Tutors</a></h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../requirements.html">Requirements</a></li>
+                <li><a href="admin-dashboard.html">Admin Dashboard</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="form-container">
+        <h1>Admin Dashboard</h1>
+        <p>Manage tutoring requirements and tutor applications</p>
+
+        <!-- Statistics -->
+        <div class="admin-stats">
+            <div class="stat-card">
+                <div class="stat-number" id="totalRequirements">0</div>
+                <div class="stat-label">Total Requirements</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="openRequirements">0</div>
+                <div class="stat-label">Open Requirements</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="totalTutors">0</div>
+                <div class="stat-label">Registered Tutors</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="pendingApplications">0</div>
+                <div class="stat-label">Pending Applications</div>
+            </div>
+        </div>
+
+        <!-- Recent Requirements -->
+        <div class="section">
+            <h2>Recent Requirements</h2>
+            <div id="recentRequirements" class="requirements-grid">
+                <!-- Recent requirements will be loaded here -->
+            </div>
+        </div>
+
+        <!-- Tutor Applications to Review -->
+        <div class="section">
+            <h2>Tutor Applications Needing Review</h2>
+            <div id="pendingTutors" class="tutors-grid">
+                <!-- Pending tutors will be loaded here -->
+            </div>
+        </div>
+
+        <!-- Requirements with Applications -->
+        <div class="section">
+            <h2>Requirements with Applications</h2>
+            <div id="requirementsWithApplications">
+                <!-- Requirements with applications will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/admin-dashboard.js"></script>
+</body>
+</html>
