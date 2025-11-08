@@ -18,6 +18,7 @@ The project focuses on front-end implementation using **HTML**, **CSS**, and **J
 shegar-Tutors/
 │
 ├── index.html              # Main homepage (landing page)
+|
 ├── css/                    # Folder for all CSS files
 │   ├── style.css           # Main stylesheet
 │   └── about.css           # Page-specific styles (optional)
