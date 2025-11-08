@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become a Tutor - Shegar Tutors</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2><a href="../../index.html" style="color: white; text-decoration: none;">Shegar Tutors</a></h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../requirements.html">Find Tutoring Jobs</a></li>
+                <li><a href="../post-requirement.html">Post Requirement</a></li>
+                <li><a href="tutor-signup.html">Become a Tutor</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="form-container">
+        <h2>Become a Shegar Tutor</h2>
+        <p>Join our platform and start teaching students who need your expertise</p>
+        
+        <form id="tutorRegistrationForm">
+            <div class="form-group">
+                <label for="fullName">Full Name *</label>
+                <input type="text" id="fullName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="education">Highest Education Level *</label>
+                <select id="education" required>
+                    <option value="">Select Education</option>
+                    <option value="highschool">High School Diploma</option>
+                    <option value="bachelors">Bachelor's Degree</option>
+                    <option value="masters">Master's Degree</option>
+                    <option value="phd">PhD</option>
+                    <option value="current">Current University Student</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="institution">Educational Institution *</label>
+                <input type="text" id="institution" placeholder="e.g., Addis Ababa University" required>
+            </div>
+
+            <div class="form-group">
+                <label for="major">Major/Field of Study *</label>
+                <input type="text" id="major" placeholder="e.g., Electrical Engineering" required>
+            </div>
+
+            <div class="form-group">
+                <label for="subjects">Subjects You Can Teach *</label>
+                <select id="subjects" multiple required>
+                    <option value="math">Mathematics</option>
+                    <option value="physics">Physics</option>
+                    <option value="chemistry">Chemistry</option>
+                    <option value="biology">Biology</option>
+                    <option value="english">English</option>
+                    <option value="amharic">Amharic</option>
+                    <option value="history">History</option>
+                    <option value="geography">Geography</option>
+                    <option value="civics">Civics</option>
+                    <option value="economics">Economics</option>
+                </select>
+                <small>Hold Ctrl/Cmd to select multiple subjects</small>
+            </div>
+
+            <div class="form-group">
+                <label for="gradeLevels">Grade Levels You Can Teach *</label>
+                <select id="gradeLevels" multiple required>
+                    <option value="elementary">Elementary School (1-6)</option>
+                    <option value="middle">Middle School (7-8)</option>
+                    <option value="high">High School (9-12)</option>
+                    <option value="university">University/College</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="experience">Years of Tutoring Experience *</label>
+                <select id="experience" required>
+                    <option value="">Select Experience</option>
+                    <option value="0-1">0-1 years</option>
+                    <option value="1-3">1-3 years</option>
+                    <option value="3-5">3-5 years</option>
+                    <option value="5+">5+ years</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="locations">Preferred Teaching Locations *</label>
+                <select id="locations" multiple required>
+                    <option value="bole">Bole</option>
+                    <option value="cmc">CMC</option>
+                    <option value="kazanches">Kazanches</option>
+                    <option value="piassa">Piassa</option>
+                    <option value="meskel">Meskel Flower</option>
+                    <option value="bethel">Bethel</option>
+                    <option value="online">Online Only</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="availability">Availability *</label>
+                <input type="text" id="availability" placeholder="e.g., Weekends, Weekdays after 4 PM" required>
+            </div>
+
+            <div class="form-group">
+                <label for="hourlyRate">Expected Hourly Rate (ETB) *</label>
+                <input type="number" id="hourlyRate" min="100" max="1000" required>
+            </div>
+
+            <div class="form-group">
+                <label for="bio">Teaching Philosophy/Bio *</label>
+                <textarea id="bio" rows="4" placeholder="Tell us about your teaching approach, experience, and why you'd be a great tutor..." required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="agreeTerms" required>
+                    I agree to the terms and conditions and privacy policy
+                </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Application</button>
+        </form>
+    </div>
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/tutor-registration.js"></script>
+</body>
+</html>
